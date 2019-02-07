@@ -1,0 +1,11 @@
+{
+  "name": "Algorithms",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "vjtc0n",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node index.js"
+  }
+}
