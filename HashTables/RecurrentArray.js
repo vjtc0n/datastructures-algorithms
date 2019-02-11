@@ -8,14 +8,13 @@
 // should return undefined
 
 function firstRecurringCharacter(input) {
-  let map = {};
+  const map = {};
   for (let i = 0; i < input.length; i++) {
     const element = input[i];
     if (!map[element]) {
       return element;
-    } else {
-      map[element] = i;
     }
+    map[element] = i;
   }
 }
 

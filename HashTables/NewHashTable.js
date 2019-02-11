@@ -12,7 +12,7 @@ class HashTable {
   }
 
   set(key, value) {
-    let address = this._hash(key);
+    const address = this._hash(key);
     if (!this.data[address]) {
       this.data[address] = [];
     }
@@ -20,7 +20,7 @@ class HashTable {
   }
 
   get(key) {
-    let address = this._hash(key);
+    const address = this._hash(key);
     const currentBucket = this.data[address];
     if (currentBucket.length) {
       for (let i = 0; i < currentBucket.length; i++) {
